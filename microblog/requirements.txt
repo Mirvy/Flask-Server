@@ -9,3 +9,4 @@ flask-moment==0.9.0
 flask-babel==0.12.2
 python-dotenv==0.10.3
 pyjwt==1.7.1
+guess_language-spirit==0.5.3
