@@ -4,7 +4,7 @@
 				{% if (not user and current_user.username != post.author.username) 
 				   or (user and user.username != post.author.username)
 				%}
-				<a href="{{ url_for('user', username=post.author.username) }}">
+				<a href="{{ url_for('main.user', username=post.author.username) }}">
 				{% endif %}
 					<img src="{{ post.author.avatar(70) }}">
 				</a>
@@ -14,7 +14,7 @@
 				{% if (not user and current_user.username != post.author.username) 
 				   or (user and user.username != post.author.username)
 				%}
-				<a href="{{ url_for('user', username=post.author.username) }}"> 
+				<a href="{{ url_for('main.user', username=post.author.username) }}"> 
 				{% endif %}
 					{{ post.author.username }} 
 				</a>
